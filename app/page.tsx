@@ -23,6 +23,7 @@ export default function Home() {
           return (
             <Link href={movie.imdbmovieid}>
               <Movie
+                key={movie.imdbmovieid}
                 title={movie.movietitle}
                 thumbnail={
                   movie.moviemainphotos.length === 0
